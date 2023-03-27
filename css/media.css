@@ -62,16 +62,16 @@
         transition: .5s;
     }
 
-    .nav__menu:hover .nav__menu-line::before {
+    .nav__menu.active .nav__menu-line::before {
         transform: rotate(45deg);
         top: 0;
     }
-    .nav__menu:hover .nav__menu-line::after {
+    .nav__menu.active .nav__menu-line::after {
         transform: rotate(45deg);
         top: 0;
     }
 
-    .nav__menu:hover .nav__menu-line {
+    .nav__menu.active .nav__menu-line {
         background: transparent;
     }
 
@@ -90,7 +90,7 @@
         transition: .5s;
     }
 
-    .nav__menu:hover ~ .nav__list  {
+    .nav__list.active  {
         transform: scale(1);
     }
 
